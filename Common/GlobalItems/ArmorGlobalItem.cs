@@ -29,7 +29,7 @@ namespace ArmorAndAccessoryPrefixes.Common.GlobalItems
 
         public override void UpdateEquip(Item item, Player player) {
             player.statLifeMax2 += MaxHP;
-            player.GetModPlayer<ArmorPlayer>().CritDamage = CritDamage;
+            player.GetModPlayer<ArmorPlayer>().CritDamage += CritDamage;
             player.aggro += Aggro;
             player.lifeRegen += LifeRegen;
             player.jumpSpeedBoost += JumpSpeedBoost;
